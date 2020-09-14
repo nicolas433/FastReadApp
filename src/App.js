@@ -20,8 +20,11 @@ export default function App() {
     setCount(count + 1);
     if (
       words[count][words[count].length - 1] === "." ||
-      words[count][words[count].length - 1] === "," ||
-      words[count] === "capitulo"
+      words[count][words[count].length - 1] === ":" ||
+      words[count][words[count].length - 1] === ";" ||
+      words[count][words[count].length - 1] === '"' ||
+      words[count][words[count].length - 1] === "'" ||
+      words[count][words[count].length - 1] === ","
     ) {
       setDelay(delay + 200);
     } else {
