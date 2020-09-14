@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #0e0e10;
+}
+button {
+  font-family: Roobert, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  background-color: #9147ff;
+  height: 30px;
+  font-size: 18px;
+}
+label {
+  font-family: Roobert, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 15px;
+}
+select {
+  font-family: Roobert, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-radius: 3px;
+  background-color: #323234;
+  color: white;
+  height: 30px;
+  padding-left: 8px;
+}
+
+textarea {
+  font-family: Roobert, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  resize: none;
+  height: 250px;
+  margin-bottom: 20px;
+  background-color: #3a3a3d;
+  border-radius: 3px;
+  color: white;
+  font-size: 16px;
+}
+
+.App {
+  font-family: Roobert, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  width: 100%;
+  height: 97.5vh;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: white;
+}
+.left-side {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.left-side button {
+  margin-top: 20px;
+}
+
+.right-side {
+  width: 78%;
+  height: 100%;
+  background-color: #9147ff;
+  border-radius: 3px;
+}
+.right-side .controls {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.right-side .controls .play-pause {
+  border: none;
+  height: 100%;
+  width: 60px;
+  background-color: #9147ff;
+}
+.right-side .controls .play-pause:focus {
+  outline: thin dotted;
+  outline: 0px auto -webkit-focus-ring-color;
+  outline-offset: 0px;
+}
+
+.right-side .controls .full-screen {
+  height: 100%;
+  width: 60px;
+  border: none;
+  background-color: #9147ff;
+}
+.right-side .controls .full-screen:focus {
+  outline: thin dotted;
+  outline: 0px auto -webkit-focus-ring-color;
+  outline-offset: 0px;
+}
+.visor {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+}
+
+textarea::-webkit-scrollbar {
+  width: 7px;
+  background-color: #3a3a3d;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #1d1d20;
+  transition: 1s;
+  border: 1px solid #3c3c3f;
+}
